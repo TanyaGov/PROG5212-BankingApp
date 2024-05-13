@@ -23,7 +23,7 @@ This is a simple banking application written in Java. It allows users to log in 
 2. **Option Selection:**
     - Users can select various banking options from a menu.
     - Options include making transactions, viewing bank reports, and exiting the application.
-    - 
+      
  3. **Making Transactions:**
     - Users can make transactions by entering transaction details such as name, description, recipient, amount, and status.
     - Transactions can be pending or finalized.
