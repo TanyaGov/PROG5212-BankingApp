@@ -95,6 +95,32 @@ public class BankingApp {
         else{ return false;}
     }// end checkPassword
     
+    public static void report()
+    {
+        String choice = JOptionPane.showInputDialog("Please select an option:\n1.Display all transactions\n2.Show all Finalised Transactions\n3Search for Transaction\n4.Remove transaction");
+        int option = Integer.parseInt(choice);
+        
+        Transactions reportTransaction = new Transactions();
+        
+        switch (option) {
+            case 1:
+                reportTransaction.displayArray();
+                break;
+                case 2:
+                reportTransaction.displayFinalisedTransactions();
+                break;
+                case 3:
+                String searchValue = JOptionPane.showInputDialog("Enter transaction name to search by");
+                reportTransaction.SearchTransactions(searchValue);
+                break;
+                case 4:
+                String removeValue = JOptionPane.showInputDialog("Enter transaction name to delete");
+                reportTransaction.RemoveTransactions(removeValue);
+                break;
+            default:
+                throw new AssertionError();
+        }
+    }
     // this method provides the user with a list of options and allows then to select a feature to use
     public static void options()
     {
@@ -127,7 +153,7 @@ public class BankingApp {
                 
                 // if option = 2 >> display that the feature is coming soon
                 case 2:
-                    JOptionPane.showMessageDialog(null,"Implemented in future");
+                    report();
                     // display the message to the user
                 break;// end option 2
                 
