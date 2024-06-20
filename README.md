@@ -1,17 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
 # BankingApp
 
-**Application Overview:**
+## 🟢 Application Overview
 
 This is a simple banking application written in Java. It allows users to log in with an account ID and password, then perform various banking transactions like making transactions and viewing bank reports.
 
 ![image](https://github.com/TanyaGov/PROG5212-BankingApp/assets/105000800/4e4f8f8c-c8f5-40c7-b5b7-a04e038b7f7d)
 
 
--The application uses JOptionPane for user interaction, providing a simple GUI interface.
+#### The application uses JOptionPane for user interaction, providing a simple GUI interface.
+#### Transactions are stored and managed using the Transactions class, which handles transaction details.
+#### Users are able to view Transactions that they have made
 
--Transactions are stored and managed using the Transactions class, which handles transaction details.
-
-**Features:**
+### Features:
 
 1. **Login Functionality:**
     - Users are prompted to enter their account ID and password.
@@ -30,7 +33,10 @@ This is a simple banking application written in Java. It allows users to log in 
     - The app keeps track of the total amount of transactions.
   
  4. **Banking Report:**
-    - The application displays that this feture is coming soon.
+    - The application stores all the transactions made by a user in arrays.
+    - The application displays a report of all the transactions made by the user.
+    - The application allows a user to search for a transaction by transaction name.
+    - The user is able to remove any transaction by entering the transaction name.
 
  5. **Exit Application**
     - Allows the user to exit the application and displays a goodbye message.
